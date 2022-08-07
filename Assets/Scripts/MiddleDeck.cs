@@ -11,8 +11,11 @@ public class MiddleDeck : MonoBehaviour
     public Sprite face;
     public float cardSpace;
     public List<GameObject> cards_;
+    //public NetworkDeck cards_;
     public string script;
     public int order;
+
+    
 
     void OnMouseDown()
     {

@@ -14,11 +14,20 @@ public class Deck : MonoBehaviour
     public string script;
     public int order;
 
-    /*void OnMouseDown()
+    void OnMouseDown()
     {
+        if (cards_.Count == 0){
+            print("add king?");
+            AddCard(gameObject, 13, 1);
+        }
         //is this hard coded right now?
-        AddCard(gameObject, 13, 1);
-    }*/
+        else { 
+            if (gameObject == GameObject.Find("DeckPink")){
+                int i = cards_.Count - 1;
+                cards_[i].GetComponent<Card>().OnMouseDown();
+            }
+        }
+    }
 
     //Note: this code repeats three times and can easily be simplified
     public void AddCard(GameObject deck_, int startValue, int order)

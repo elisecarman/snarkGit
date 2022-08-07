@@ -24,3 +24,12 @@ public class Snark : MonoBehaviour
         }
     }
 }
+
+/* public override void OnCreateManager()
+    {
+       // public struct RpcQueue<T> m_RpcQueue = World.GetOrCreateManager<RpcSystem>().GetRpcQueue<RpcLoadLevel>();
+    }
+
+    public override void OnNetworkSpawn(){
+       
+    }*/

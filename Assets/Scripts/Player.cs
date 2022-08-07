@@ -13,6 +13,16 @@ public class Player : MonoBehaviour
     public GameObject Draw;
     public GameObject DrawPile;
     // Start is called before the first frame update
+
+    void OnMouseDown()
+    {
+        Color color;
+        if (ColorUtility.TryParseHtmlString("#00FFFA", out color))
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = color;
+        }
+    }
+    
     void Start()
     {
         
@@ -21,6 +31,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Color color;
+        if (ColorUtility.TryParseHtmlString("#FFFFFF", out color))
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = color;
+        }
     }
 }

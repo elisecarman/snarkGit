@@ -41,9 +41,9 @@ public class Card : MonoBehaviour
             spriteNumber = 39; 
         }
 
-        Sprite[] cards = Resources.LoadAll<Sprite>("Sprites/Cards/Classic/Cards");
+        Sprite[] cards = Resources.LoadAll<Sprite>("Sprites/Cards/Classic New/Cards");
         sprite = cards[spriteNumber+number-1];
-        back = Resources.Load<Sprite>("Sprites/Cards/Classic/Back");
+        back = Resources.Load<Sprite>("Sprites/Cards/Classic New/Back");
         print(sprite);
         
     }
@@ -86,7 +86,7 @@ public class Card : MonoBehaviour
         }
     }
 
-    void OnMouseDown() {
+    public void OnMouseDown() {
         print("CARD CLICKED: " + gameObject + " | FACE: " + face);
         //card can only be clicked if it's face up
         //use SelCard method in Decks
